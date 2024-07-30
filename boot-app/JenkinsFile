@@ -15,7 +15,7 @@ pipeline {
     stage('Build and Test') {
       steps {
         sh 'ls -ltr'
-        sh 'cd boot-app && mvn clean install'
+        sh 'cd boot-app && mvn clean package'
       }
     }
     stage('Static Code Analysis') {
