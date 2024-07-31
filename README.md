@@ -1,4 +1,6 @@
-# JENKINS-CI-CD
+# JENKINS-CI-CD [Installing Jenkins, configuring Docker as agent, setting up cicd, deploying applications to k8s and much more.]
+
+
 
 ## AWS EC2 Instance.
 ### Steps from here to Docker config has to be done in EC2 instance terminal/shell
