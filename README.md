@@ -147,7 +147,9 @@ Steps:
         chmod -R 755 /home/sonarqube/sonarqube-9.4.0.54424
         chown -R sonarqube:sonarqube /home/sonarqube/sonarqube-9.4.0.54424
         cd sonarqube-9.4.0.54424/bin/linux-x86-64/
-        ./sonar.sh start        
+        ./sonar.sh start 
+
+        -SonarQube Server can be accessed on http://<EC2-public-ip-address>:9000
 
     7. Configure Jenkins pipeline to integrate with Argo CD:
        7.1 Add the Argo CD API token to Jenkins credentials.
@@ -158,6 +160,10 @@ Steps:
        8.2 Monitor the pipeline stages and fix any issues that arise.
 
 This end-to-end Jenkins pipeline will automate the entire CI/CD process for a Java application, from code checkout to production deployment, using popular tools like SonarQube, Argo CD, Helm, and Kubernetes.
+
+-------------------------------------------------------------------------------------------------------------
+
+
 
 
 
